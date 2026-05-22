@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sourasish Samadder</title>
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Sourasish Samadder</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                <span class="sun">☀️</span>
+                <span class="moon">🌙</span>
+            </button>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection" id="home">
+            <div class="leftSection">
+                <p class="introLabel">Hi, I am</p>
+                <h1><span id="element"></span></h1>
+                <p class="introText">A CSE student building clean, useful and creative web experiences.</p>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="aboutSection sectionBlock" id="about">
+            <p class="sectionLabel">About</p>
+            <h2>A curious developer who enjoys turning ideas into useful products.</h2>
+            <p>
+                I am a BTech CSE student interested in web development, data science and problem solving.
+                I like building projects that are simple to use, responsive on every screen and clear in their purpose.
+            </p>
+        </section>
+        <section class="skillsSection sectionBlock" id="skills">
+            <p class="sectionLabel">Skills</p>
+            <h2>Tools and technologies I work with</h2>
+            <div class="skillsGrid">
+                <div class="skillCard">
+                    <h3>Frontend</h3>
+                    <p>HTML, CSS, JavaScript, responsive layouts and interactive UI design.</p>
+                </div>
+                <div class="skillCard">
+                    <h3>Programming</h3>
+                    <p>C, C++, Python and core computer science fundamentals.</p>
+                </div>
+                <div class="skillCard">
+                    <h3>Data Science</h3>
+                    <p>Python basics, data analysis, visualization and machine learning foundations.</p>
+                </div>
+                <div class="skillCard">
+                    <h3>Workflow</h3>
+                    <p>Git, GitHub, debugging, clean code structure and continuous learning.</p>
+                </div>
+            </div>
+        </section>
+        <section class="projectsSection sectionBlock" id="projects">
+            <p class="sectionLabel">Projects</p>
+            <h2>Explore my work on GitHub</h2>
+            <div class="githubProject">
+                <div class="githubMark" aria-hidden="true">GH</div>
+                <div>
+                    <h3>My GitHub Projects</h3>
+                    <p>
+                        I keep my code, experiments and learning projects on GitHub. Visit my profile to see what I am
+                        building and improving.
+                    </p>
+                </div>
+                <a href="https://github.com/sourasish-2006" target="_blank" rel="noopener noreferrer">
+                    Open GitHub
+                </a>
+            </div>
+        </section>
+        <section class="contactSection sectionBlock" id="contact">
+            <div>
+                <p class="sectionLabel">Contact Me</p>
+                <h2>Have an idea or opportunity?</h2>
+                <p>
+                    I am open to internships, beginner-friendly collaborations and project discussions.
+                    Send me a message and I will get back to you.
+                </p>
+            </div>
+            <form class="contactForm" id="contactForm" action="https://formsubmit.co/samaddersourasish2006@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="New portfolio contact message">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="text" name="name" placeholder="Your name" required>
+                <input type="email" name="email" placeholder="Your email" required>
+                <textarea name="message" rows="5" placeholder="Your message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="typinganimate.js"></script>
+    <script src="contact.js"></script>
+</body>
+
+</html>
